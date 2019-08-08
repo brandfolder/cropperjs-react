@@ -17,5 +17,12 @@
     "react-hooks"
   ],
   "author": "Anders Wood",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cropperjs": "^1.5.5",
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  }
 }

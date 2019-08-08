@@ -1,0 +1,8 @@
+.crop-core-container {
+  display: inline-block;
+}
+
+.crop-core-container > img {
+    display: none;
+    width: 100%;
+}

@@ -1,5 +1,1 @@
-function testFunction() {
-  return 'howdy!';
-}
-
-module.exports testFunction;
+export { default } from './crop_core.jsx';
