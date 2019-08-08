@@ -1,6 +1,6 @@
 {
   "name": "cropperjs-react",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React component wrapper for CropperJS using react hooks.",
   "main": "index.js",
   "scripts": {
