@@ -2,7 +2,7 @@
   "name": "cropperjs-react",
   "version": "1.4.3",
   "description": "React component wrapper for CropperJS using react hooks.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
