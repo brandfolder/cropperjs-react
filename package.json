@@ -3,12 +3,10 @@
   "version": "1.4.7",
   "description": "React component wrapper for CropperJS using react hooks.",
   "main": "dist/index.js",
-  "publishConfig": {
-    "access": "restricted"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "rm -rf ./dist && npm run build"
+    "prepublish": "rm -rf ./dist && yarn run build",
+    "build": "babel ./src -d dist"
   },
   "repository": {
     "type": "git",
@@ -31,6 +29,9 @@
     "react-dom": "^16.8.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   }
