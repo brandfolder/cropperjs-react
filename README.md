@@ -34,5 +34,3 @@ import CropCore from 'cropperjs-react';
     setter={setter}
   />
 ```
-
-sdf
