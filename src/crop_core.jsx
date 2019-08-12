@@ -4,8 +4,6 @@ import Cropper from 'cropperjs';
 import 'cropperjs/dist/cropper.css';
 
 import { availableOptions } from './crop_helper';
-import './crop_core.css';
-
 
 const CropCore = (props) => {
   const ref = useRef();
@@ -171,13 +169,20 @@ const CropCore = (props) => {
     handleGetter();
   }, [props.getter]);
 
+  const containerStyles = { display: 'inline-block' };
+  const imgStyles = { display: 'none', width: '100%' };
+
   return (
-    <div className="crop-core-container">
+    <div
+      className="crop-core-container"
+      styles={containerStyles}
+    >
       <img
         alt="crop"
         id="cropperjs-image"
         ref={ref}
         src={props.imageUrl}
+        styles={imgStyles}
       />
     </div>
   );

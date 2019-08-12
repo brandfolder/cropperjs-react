@@ -1,9 +1,0 @@
-.crop-core-container {
-  display: inline-block;
-  border: 10px solid magenta; // DELETE!!!!!!!
-}
-
-.crop-core-container > img {
-    display: none;
-    width: 100%;
-}
