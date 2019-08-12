@@ -1,1 +1,1 @@
-export { default } from './crop_core';
+export { default } from './wrapper';

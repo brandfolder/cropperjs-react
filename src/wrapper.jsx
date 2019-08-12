@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import Cropper from 'cropperjs';
 import 'cropperjs/dist/cropper.css';
 
-import { availableOptions } from './crop_helper';
+import { availableOptions } from './helper';
 
-const CropCore = (props) => {
+const CropperJSWrapper = (props) => {
   const ref = useRef();
   const [cropper, setCropper] = useState({});
   const [cropperReady, setCropperReady] = useState(false);
@@ -174,7 +174,7 @@ const CropCore = (props) => {
 
   return (
     <div
-      className="crop-core-container"
+      className="cropperjs-wrapper"
       style={containerStyles}
     >
       <img
@@ -188,7 +188,7 @@ const CropCore = (props) => {
   );
 };
 
-CropCore.propTypes = {
+CropperJSWrapper.propTypes = {
   croppedCanvasOptions: PropTypes.shape({}),
   imageUrl: PropTypes.string.isRequired,
   onCrop: PropTypes.func.isRequired,
@@ -215,7 +215,7 @@ CropCore.propTypes = {
   /* eslint-enable react/no-unused-prop-types */
 };
 
-CropCore.defaultProps = {
+CropperJSWrapper.defaultProps = {
   croppedCanvasOptions: {},
   getter: PropTypes.shape({
     action: '',
@@ -238,4 +238,4 @@ CropCore.defaultProps = {
   zoomOnWheel: true,
 };
 
-export default CropCore;
+export default CropperJSWrapper;
