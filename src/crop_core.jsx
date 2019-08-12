@@ -4,7 +4,7 @@ import Cropper from 'cropperjs';
 import 'cropperjs/dist/cropper.css';
 
 import { availableOptions } from './crop_helper';
-import './crop_core';
+import './crop_core.css';
 
 
 const CropCore = (props) => {
