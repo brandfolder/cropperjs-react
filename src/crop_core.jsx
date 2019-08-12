@@ -175,14 +175,14 @@ const CropCore = (props) => {
   return (
     <div
       className="crop-core-container"
-      styles={containerStyles}
+      style={containerStyles}
     >
       <img
         alt="crop"
         id="cropperjs-image"
         ref={ref}
         src={props.imageUrl}
-        styles={imgStyles}
+        style={imgStyles}
       />
     </div>
   );
