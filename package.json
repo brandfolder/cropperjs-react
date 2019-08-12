@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel ./src -d dist"
   },
+  "browserslist": "> 0.25%, not dead",
   "repository": {
     "type": "git",
     "url": "https://github.com/brandfolder/cropperjs-react"
@@ -28,9 +29,11 @@
     "react-dom": "^16.8.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   }
