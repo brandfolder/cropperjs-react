@@ -1,1 +1,1 @@
-export { default } from './crop_core.jsx';
+export { default } from './crop_core';
