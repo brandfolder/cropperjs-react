@@ -203,8 +203,7 @@ CropperJSWrapper.propTypes = {
     action: PropTypes.string,
     data: PropTypes.shape({}),
   }),
-  // default props used if not passed in from parent
-  /* eslint-disable react/no-unused-prop-types */
+  // default props used if not passed in
   checkCrossOrigin: PropTypes.bool,
   dragMode: PropTypes.string,
   guides: PropTypes.bool,
@@ -212,7 +211,6 @@ CropperJSWrapper.propTypes = {
   viewMode: PropTypes.number,
   zoomable: PropTypes.bool,
   zoomOnWheel: PropTypes.bool,
-  /* eslint-enable react/no-unused-prop-types */
 };
 
 CropperJSWrapper.defaultProps = {
@@ -228,7 +226,7 @@ CropperJSWrapper.defaultProps = {
     action: '',
     data: {},
   }),
-  // default props used if not passed in from parent
+  // default props used if not passed in
   checkCrossOrigin: true,
   dragMode: 'move',
   guides: true,
