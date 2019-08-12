@@ -47,7 +47,7 @@ jobs:
           command: NODE_ENV=development yarn install
       - run:
           name: Build
-          command: yarn build
+          command: NODE_ENV=development yarn build
       - run:
           name: Publish package
           command: npm publish
