@@ -11,12 +11,13 @@ React component wrapper for [CropperJS](https://fengyuanchen.github.io/cropperjs
 - [Usage](#usage)
 
 ## Overview
-React component wrapping [CropperJS](https://www.npmjs.com/package/react-cropper) library using [React hooks](https://reactjs.org/docs/hooks-overview.html) (useEffect and useState).
+React component wrapping [CropperJS](https://www.npmjs.com/package/cropperjs) library using [React hooks](https://reactjs.org/docs/hooks-overview.html) (useEffect and useState).
 
-This wrapper accommodates all the functionality of the CropperJS library. To get data back from the cropper once the cropper object has initialized, update the `getter` object, e.g.:
+This wrapper accommodates all the functionality of the [CropperJS](https://www.npmjs.com/package/cropperjs) library. 
+
+To get data back from the cropper once the cropper object has initialized, update the `getter` object, e.g.:
 ```js
 setGetter({ action: 'getCanvasData', func: setCanvasData });
-
 ```  
 The cropper data, in this case the canvas data, will be passed into the supplied function as an argument. In this example, the canvas data will passed into `setCanvasData` and set into the `canvasData` state.
 
