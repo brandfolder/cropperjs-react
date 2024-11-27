@@ -6,7 +6,11 @@
   "scripts": {
     "audit:fix": "npx yarn-audit-fix",
     "build": "babel ./src -d dist",
-    "deduplicate": "npx yarn-deduplicate yarn.lock"
+    "deduplicate": "npx yarn-deduplicate yarn.lock",
+    "update": "npx npm-check-updates -u",
+    "update:major": "npx npm-check-updates --target latest",
+    "update:minor": "npx npm-check-updates --target minor",
+    "update:patch": "npx npm-check-updates --target patch"
   },
   "browserslist": "> 0.25%, not dead",
   "repository": {
@@ -22,7 +26,7 @@
   "author": "Anders Wood",
   "license": "ISC",
   "dependencies": {
-    "cropperjs": "^1.5.5",
+    "cropperjs": "^1.5.12",
     "prop-types": "^15.8.1"
   },
   "peerDependencies": {
@@ -30,11 +34,11 @@
     "react-dom": "^16.8.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/polyfill": "^7.4.4",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/cli": "^7.25.9",
+    "@babel/core": "^7.26.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
