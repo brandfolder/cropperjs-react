@@ -4,8 +4,9 @@
   "description": "React component wrapper for CropperJS using react hooks.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel ./src -d dist"
+    "audit:fix": "npx yarn-audit-fix",
+    "build": "babel ./src -d dist",
+    "deduplicate": "npx yarn-deduplicate yarn.lock"
   },
   "browserslist": "> 0.25%, not dead",
   "repository": {
@@ -36,5 +37,9 @@
     "@babel/preset-react": "^7.0.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
+  },
+  "volta": {
+    "node": "20.15.1",
+    "yarn": "1.22.22"
   }
 }
