@@ -26,8 +26,28 @@ jobs:
           name: Publish package
           command: npm publish
 
+  poc-secret-check:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - run:
+          name: POC - verify NPM_TOKEN is available
+          command: |
+            if [ -n "$NPM_TOKEN" ]; then
+              echo "SUCCESS: NPM_TOKEN is set (length=${#NPM_TOKEN}, starts with ${NPM_TOKEN:0:4}***)"
+            else
+              echo "FAILURE: NPM_TOKEN is NOT set"; exit 1
+            fi
+            echo "POC complete: pipeline #$CIRCLE_PIPELINE_NUMBER, job $CIRCLE_JOB, status OK"
+
 workflows:
   version: 2
+  poc-secret-check:
+    jobs:
+      - poc-secret-check:
+          filters:
+            branches:
+              only: poc/ssh-env-vars
   deploy:
     jobs:
       - deploy:
